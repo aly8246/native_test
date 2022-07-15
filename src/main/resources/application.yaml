@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    hikari:
+      auto-commit: true
+      connection-test-query: SELECT 1
+      connection-timeout: 30000
+      idle-timeout: 180000
+      max-lifetime: 1800000
+      maximum-pool-size: 10
+      minimum-idle: 1
+      pool-name: HikariCP
+    url: jdbc:mysql://rm-bp1pq4p15633m4n9ceo.mysql.rds.aliyuncs.com:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    username: canary
+    password: gols852456mysql+
